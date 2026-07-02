@@ -1,0 +1,14 @@
+node_modules/
+*.log
+.DS_Store
+
+# NOTE: dist/ is intentionally NOT ignored — the compiled bundle is committed
+# so the action can run directly from the repo (runs.using: node20).
+
+# Local test output — generated SVGs written during native/act test runs.
+out/
+out-*/
+fixtures/*.svg
+
+# Internal-only docs — dev/testing guide, not part of the public listing.
+docs/

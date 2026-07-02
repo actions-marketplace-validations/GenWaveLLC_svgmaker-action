@@ -1,0 +1,32 @@
+{
+  "name": "svgmaker-action",
+  "version": "1.0.0",
+  "description": "GitHub Action to convert raster images to SVG using the SVGMaker API",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/index.ts -o dist",
+    "test": "node --import tsx --test src/*.test.ts",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "github-action",
+    "svg",
+    "vectorize",
+    "image-to-svg",
+    "image-conversion",
+    "ai",
+    "svgmaker"
+  ],
+  "author": "SVGMaker (https://svgmaker.io)",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^2.0.3",
+    "@actions/glob": "^0.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "@vercel/ncc": "^0.38.3",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.0"
+  }
+}
